@@ -1,0 +1,94 @@
+.profile {
+    padding-left: 15px;
+
+    .card {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem 0;
+  
+      div.profile-photo {
+        text-align: center;
+        margin: 3rem auto;
+        width: 250px;
+        height: 250px;
+      }
+  
+      img {
+        width: 100%;
+        height: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      div.profile-data {
+        margin: 0 2rem;
+        
+        p {
+            font-size: 1.6rem;
+        }
+
+        button {
+            margin: 1.5rem 0;
+        }
+
+        code {
+          font-size: 14px;
+          color: #c0c0c0;
+  
+          &:first-child {
+            margin-top: 1rem;
+          }
+        }
+      }
+      div.profile-data > * {
+        border-top: 1px solid #ccc;
+        padding: 8px 0;
+      }
+
+      .edit-form{
+        width: 90%;
+        margin: 0 auto;
+        
+        label {
+          display: block;
+          text-align: center;
+          padding: 5px 0;
+        }
+
+        input {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        code {
+          text-align: center;
+          display: block;
+        }
+
+        textarea {
+          width: 80%;
+          display: block;
+          margin: 0 auto;
+        }
+
+        button {
+          margin: 2rem auto;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    div.profile-photo {
+      margin: auto;
+    }
+
+    div.profile-data {
+        p {
+            font-size: 1.4rem;
+        }
+    }
+  }
