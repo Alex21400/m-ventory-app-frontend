@@ -497,3 +497,17 @@ ul {
   background-color: var(--dark-blue);
   height: 100%;
 }
+
+@media screen and (max-width: 500px) {
+  .pagination .page-num {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .pagination .page-num {
+    padding: 2px 3px;
+    font-size: 10px;
+  }
+}
